@@ -1,2 +1,3 @@
 # MultiplicationTable
-Multiplication program in C#
+
+A simple multiplication program in C#
