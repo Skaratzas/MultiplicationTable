@@ -15,7 +15,7 @@ namespace MultiplicationTable
                 bool flag = true;
                 while (flag)
                 {
-                    Console.Write(+i + " * " + num + " = ");
+                    Console.Write(+ i + " * " + num + " = ");
                     int answer = Convert.ToInt32(Console.ReadLine());
                     if (answer == (i * num))
                     {
@@ -29,10 +29,7 @@ namespace MultiplicationTable
 
                 }
             }
-
             Console.ReadLine();
-
-
         }
     }
 }
