@@ -9,14 +9,31 @@ namespace MultiplicationTable
             Console.Write("Give a number: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
-            for(int i=1; i<=10; i++)
+
+            for (int i = 1; i <= 10; i++)
             {
-                int result = i * num;
-                Console.WriteLine(+ i + " * " + num + " = " + result);
+                bool flag = true;
+                while (flag)
+                {
+                    Console.Write(+i + " * " + num + " = ");
+                    int answer = Convert.ToInt32(Console.ReadLine());
+                    if (answer == (i * num))
+                    {
+                        Console.WriteLine("Well done!");
+                        flag = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try again");
+                    }
+
+                }
             }
 
-
             Console.ReadLine();
+
+
         }
     }
 }
+
