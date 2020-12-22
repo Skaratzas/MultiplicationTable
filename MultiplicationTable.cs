@@ -17,6 +17,7 @@ namespace MultiplicationTable
                 int randomNum = random.Next(1, 10);
                 while (flag)
                 {
+<<<<<<< HEAD
 
                     Console.Write(+ randomNum + " * " + num + " = ");
                     String answer = Console.ReadLine();
@@ -27,6 +28,11 @@ namespace MultiplicationTable
                         Console.WriteLine("Well done, we are done for today!");
                     }
                     else if (Convert.ToInt32(answer) == (randomNum * num))
+=======
+                    Console.Write(+ i + " * " + num + " = ");
+                    int answer = Convert.ToInt32(Console.ReadLine());
+                    if (answer == (i * num))
+>>>>>>> f072063c896f314131930094d6637c0ce340e662
                     {
                         Console.WriteLine("Well done!");
                         flag = false;
@@ -37,11 +43,13 @@ namespace MultiplicationTable
                     }
 
                 }
+<<<<<<< HEAD
             } while (exit);
 
+=======
+            }
+>>>>>>> f072063c896f314131930094d6637c0ce340e662
             Console.ReadLine();
-
-
         }
     }
 }
